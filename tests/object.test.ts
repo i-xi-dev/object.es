@@ -1,4 +1,4 @@
-import { assertNotStrictEquals, assertStrictEquals } from "./deps.ts";
+import { assertStrictEquals } from "./deps.ts";
 import { ObjectEx } from "../mod.ts";
 
 Deno.test("ObjectEx.isNonNullObject()", () => {
