@@ -13,3 +13,23 @@ export function isAsyncIterableObject<T = any>(
 ): test is AsyncIterable<T> {
   return isNonNullObject(test) && (Symbol.asyncIterator in test);
 }
+
+// // deno-lint-ignore no-explicit-any
+// export function equalsEntries(a: any, b: any): boolean {
+//   const aType = (typeof a);
+//   if (aType !== (typeof b)) {
+//     return false;
+//   }
+//   if (aType !== "object") {
+//     return false;
+//   }
+
+//   const aEntries = Object.entries(a);
+//   const bEntries = Object.entries(b);
+
+//   if (aEntries.length !== bEntries.length) {
+//     return false;
+//   }
+
+//   //TODO 循環参照検出
+// }
