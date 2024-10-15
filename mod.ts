@@ -1,1 +1,1 @@
-export * as ObjectEx from "./src/object.ts";
+export * as IterableObject from "./src/iterable_object.ts";
